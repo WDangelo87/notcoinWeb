@@ -15,10 +15,10 @@ export default defineConfig({
                 cleanupOutdatedCaches: true
             },
             manifest: {
-                "name": "Notcoin",
-                "short_name": "Notcoin",
-                "description": "Notcoin - tap and earn",
-                "start_url": "./",
+                "name": "TCG Tap Coin",
+                "short_name": "TCG",
+                "description": "Tap to earn $TCG. Rise as the Titan Cola God",
+                "start_url": "/",
                 "icons": [
                     {
                         "src": "/icons/android-chrome-192x192.png?v=1",
