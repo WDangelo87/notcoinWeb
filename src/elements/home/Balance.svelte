@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { getTotalBalance } from '../../utils';
   import { playerCount, onlineToday, onlineNow } from '../../store';
-  import Coin from '../../elements/misc/Skeleton.svelte';
+  import Coin from '../misc/Skeleton.svelte'; // ✅ Corrected path
 
   let totalBalance = 0;
 
