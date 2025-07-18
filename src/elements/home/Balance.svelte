@@ -2,9 +2,9 @@
   import { onMount } from 'svelte';
   import { getTotalBalance } from '../../utils';
   import { playerCount, onlineToday, onlineNow } from '../../store';
-  import Coin from '../misc/Skeleton.svelte'; // ✅ Corrected path
+  import Coin from '../misc/Skeleton.svelte'; // ✅ This path is now correct relative to "home/"
 
-  let totalBalance = 0;
+  let totalBalance: number = 0;
 
   onMount(async () => {
     totalBalance = await getTotalBalance();
