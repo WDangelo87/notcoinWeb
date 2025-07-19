@@ -1,13 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { getTotalBalance } from '../../utils';
-  import { playerCount, onlineToday, onlineNow } from '../../store';
-
-  let totalBalance: number = 0;
-
-  onMount(async () => {
-    totalBalance = await getTotalBalance();
-  });
+  let totalBalance = 0;
 </script>
 
 <div class="balance">
@@ -18,13 +10,13 @@
 
   <ul class="stats">
     <li>
-      <span class="dot" /> {playerCount} <span>total players</span>
+      <span class="dot" /> 0 <span>total players</span>
     </li>
     <li>
-      <span class="dot" /> {onlineToday} <span>online today</span>
+      <span class="dot" /> 0 <span>online today</span>
     </li>
     <li>
-      <span class="dot" /> {onlineNow} <span>online</span>
+      <span class="dot" /> 0 <span>online</span>
     </li>
   </ul>
 </div>
