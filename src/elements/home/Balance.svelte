@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   import { getTotalBalance } from '../../utils';
   import { playerCount, onlineToday, onlineNow } from '../../store';
-  import Coin from '../misc/Skeleton.svelte'; // ✅ This path is now correct relative to "home/"
 
   let totalBalance: number = 0;
 
@@ -19,13 +18,13 @@
 
   <ul class="stats">
     <li>
-      <Coin /> {playerCount} <span>total players</span>
+      <span class="dot" /> {playerCount} <span>total players</span>
     </li>
     <li>
-      <Coin /> {onlineToday} <span>online today</span>
+      <span class="dot" /> {onlineToday} <span>online today</span>
     </li>
     <li>
-      <Coin /> {onlineNow} <span>online</span>
+      <span class="dot" /> {onlineNow} <span>online</span>
     </li>
   </ul>
 </div>
